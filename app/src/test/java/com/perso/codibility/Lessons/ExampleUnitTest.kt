@@ -1,4 +1,4 @@
-package com.perso.codibility
+package com.perso.codibility.Lessons
 
 import org.junit.Test
 

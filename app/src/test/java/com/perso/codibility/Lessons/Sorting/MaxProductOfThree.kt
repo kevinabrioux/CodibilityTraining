@@ -1,4 +1,4 @@
-package com.perso.codibility.Sorting
+package com.perso.codibility.Lessons.Sorting
 
 import org.junit.Assert
 import org.junit.Test

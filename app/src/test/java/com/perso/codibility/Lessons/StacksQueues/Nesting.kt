@@ -1,4 +1,4 @@
-package com.perso.codibility.StacksQueues
+package com.perso.codibility.Lessons.StacksQueues
 
 import org.junit.Assert
 import org.junit.Test

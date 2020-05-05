@@ -1,4 +1,4 @@
-package com.perso.codibility.CountingElements
+package com.perso.codibility.Lessons.CountingElements
 
 import org.junit.Assert
 import org.junit.Test
@@ -10,18 +10,14 @@ class MissingInteger {
      * O(N) or O(N * log(N))
      */
     fun solution(A: IntArray): Int {
-        val sorted = A.filter { it > 0 }.sorted()
-        if (sorted.isEmpty())
-            return 1
-        if (sorted[0] != 1)
-            return 1
-        sorted.forEachIndexed { index, value ->
-            if (index + 1 == sorted.size)
-                return value + 1
-            if (sorted[index + 1] - value > 1)
-                return value + 1
+        var min = 1
+        A.sorted().forEach {
+            if (it == min)
+                min++
+            else if (it > min)
+                return min
         }
-        return sorted.last() + 1
+        return min
     }
 
 
